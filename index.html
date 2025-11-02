@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AUVRA — Shine Elixir</title>
   <meta name="description" content="AUVRA Shine Elixir — Frizz control, smooth & glossy hair. Natural, lightweight serum." />
-  <!-- Fonts: Playfair Display (serif) + Poppins (sans) -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,13 +20,16 @@
         </div>
       </div>
 
+      <button class="hamburger" id="menuToggle">☰</button>
+
       <nav class="nav" id="mobileNav">
         <a href="#home">Home</a>
         <a href="#product">Product</a>
         <a href="#benefits">Benefits</a>
         <a href="#about">About</a>
-        <button class="btn btn-primary" data-action="instagram"><a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Message on Instagram</a></button>
-        <button class="hamburger" aria-label="Open menu" id="menuToggle">☰</button>
+        <button class="btn btn-primary" data-action="instagram">
+          <a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Message on Instagram</a>
+        </button>
       </nav>
     </header>
 
@@ -40,7 +42,9 @@
           <p class="hero-lead">A lightweight, nutrient-rich serum crafted to tame frizz, restore silkiness and reveal a mirror-like shine. Botanical extracts and nourishing oils — luxury that cares.</p>
 
           <div class="hero-ctas">
-            <button class="btn btn-xl btn-primary" data-action="instagram">Message on Instagram</button>
+            <button class="btn btn-xl btn-primary" data-action="instagram">
+              <a href="https://www.instagram.com/byauvra._" target="_blank" style="text-decoration:none;">Message on Instagram</a>
+            </button>
             <a href="#product" class="btn btn-outline">Explore Product</a>
           </div>
 
@@ -54,25 +58,21 @@
 
         <div class="hero-media">
           <div class="media-stage">
-            <div class="media-bg glow"></div>
             <div class="product-card">
               <div class="product-figure">
-                <img src="3.jpg" alt="AUVRA Shine Elixir" class="product-image" id="productImage">
-                <div class="shine-layer"></div>
+                <img src="3.jpg" alt="AUVRA Shine Elixir" class="product-image">
               </div>
-
               <div class="product-info">
                 <div class="product-title">AUVRA Shine Elixir</div>
                 <div class="product-sub">Frizz Control · Smooth &amp; Glossy</div>
                 <div class="product-actions">
                   <span class="badge">Plant-based</span>
-                  <button class="btn btn-sm btn-primary" data-action="instagram"><a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none;">Buy on Instagram</a></button>
+                  <button class="btn btn-sm btn-primary" data-action="instagram">
+                    <a href="https://www.instagram.com/byauvra._" target="_blank" style="text-decoration:none;">Buy on Instagram</a>
+                  </button>
                 </div>
               </div>
             </div>
-
-            <div class="float-accent accent-left"></div>
-            <div class="float-accent accent-right"></div>
           </div>
         </div>
       </div>
@@ -83,32 +83,12 @@
       <div class="container-grid">
         <main class="content">
           <h2 class="section-title">Product Details</h2>
-          <p class="muted">A lightweight, nutrient-rich finishing serum that tames frizz, restores smoothness and reveals natural gloss. Perfect for finishing and daily nourishment.</p>
+          <p class="muted">A lightweight, nutrient-rich finishing serum that tames frizz, restores smoothness and reveals natural gloss.</p>
 
           <div class="features">
-            <article class="feature">
-              <div class="feature-icon">01</div>
-              <div class="feature-body">
-                <h4>Instant Frizz Control</h4>
-                <p class="muted">Smoothes flyaways and reduces surface friction instantly.</p>
-              </div>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon">02</div>
-              <div class="feature-body">
-                <h4>Mirror-like Shine</h4>
-                <p class="muted">Delivers glossy radiance without weighing hair down.</p>
-              </div>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon">03</div>
-              <div class="feature-body">
-                <h4>Heat &amp; Humidity Defense</h4>
-                <p class="muted">Forms a lightweight protective layer for styling and travel.</p>
-              </div>
-            </article>
+            <article class="feature"><div class="feature-icon">01</div><div class="feature-body"><h4>Instant Frizz Control</h4><p class="muted">Smoothes flyaways and reduces surface friction instantly.</p></div></article>
+            <article class="feature"><div class="feature-icon">02</div><div class="feature-body"><h4>Mirror-like Shine</h4><p class="muted">Delivers glossy radiance without weighing hair down.</p></div></article>
+            <article class="feature"><div class="feature-icon">03</div><div class="feature-body"><h4>Heat &amp; Humidity Defense</h4><p class="muted">Forms a lightweight protective layer for styling and travel.</p></div></article>
           </div>
 
           <div class="split">
@@ -116,17 +96,17 @@
               <h4>How to Use</h4>
               <ol class="muted">
                 <li>Apply 2–3 drops to damp or dry hair.</li>
-                <li>Focus on mid-lengths and ends; avoid roots for a lightweight finish.</li>
-                <li>Style as usual. Reapply a tiny drop to tame flyaways after styling.</li>
+                <li>Focus on mid-lengths and ends; avoid roots.</li>
+                <li>Style as usual; reapply to tame flyaways.</li>
               </ol>
             </div>
-<br><br>
+
             <div class="ingredients card">
               <h4>Key Ingredients</h4>
               <ul class="muted ingredient-list">
                 <li><strong>Argan Oil</strong> — fatty acids for shine & softness</li>
                 <li><strong>Vitamin E</strong> — antioxidant protection</li>
-                <li><strong>Natural Plant Extracts</strong> — botanical hydration</li>
+                <li><strong>Natural Extracts</strong> — botanical hydration</li>
               </ul>
             </div>
           </div>
@@ -134,69 +114,55 @@
 
         <aside class="aside">
           <div class="card aside-card">
-            <img src="2.jpg" alt="AUVRA ritual" class="aside-img" id="asideImage">
+            <img src="2.jpg" alt="AUVRA ritual" class="aside-img">
             <div class="aside-body">
               <h4>The Ritual</h4>
-              <p class="muted">A small drop goes a long way — a single application brings instant polish and softness.</p>
-              <button class="btn btn-primary" data-action="instagram"><a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none;">Message on Instagram</a></button>
+              <p class="muted">A small drop goes a long way — instant polish and softness.</p>
+              <button class="btn btn-primary" data-action="instagram">
+                <a href="https://www.instagram.com/byauvra._" target="_blank" style="text-decoration:none;">Message on Instagram</a>
+              </button>
             </div>
           </div>
 
           <div class="card values">
             <h4>Our Promise</h4>
-            <p class="muted">Plant-based, cruelty-free, and crafted for real results with a mindful approach to beauty.</p>
+            <p class="muted">Plant-based, cruelty-free, and crafted for real results with mindful beauty.</p>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Benefits / Mission -->
+    <!-- Benefits -->
     <section id="benefits" class="section section--alt">
       <div class="container-wide">
-        <div class="benefit-wrap">
-          <h2 class="section-title">Where Shine Meets Nature</h2>
-          <p class="muted">AUVRA is built on ingredients that work and an experience that feels luxurious — daily care that boosts confidence.</p>
-<br>
-          <div class="grid-3">
-            <div class="mini card">
-              <h5>Our Mission</h5>
-              <p class="muted">To create haircare that feels as beautiful as it looks — clean, elegant, and truly effective. AUVRA stands for mindful beauty — products that enhance your natural shine while caring for your hair’s health.</p>
-            </div>
-<br>
-            <div class="mini card">
-              <h5>Our Values</h5>
-              <p class="muted">Natural Ingredients — Plant-based and cruelty-free. <br> Luxury Quality — Lightweight textures, rich results. <br>Honest Beauty — No harsh chemicals, no false promises. <br>Confidence — For every women who chooses to grow naturally.</p>
-            </div>
-<br>
-            <div class="mini card">
-              <h5>Confidence</h5>
-              <p class="muted">Products designed to help you feel polished, naturally.</p>
-            </div>
-          </div>
+        <h2 class="section-title">Where Shine Meets Nature</h2>
+        <p class="muted">AUVRA is built on ingredients that work and an experience that feels luxurious.</p>
+
+        <div class="grid-3">
+          <div class="mini card"><h5>Our Mission</h5><p class="muted">To create haircare that feels as beautiful as it looks — clean, elegant, effective.</p></div>
+          <div class="mini card"><h5>Our Values</h5><p class="muted">Natural · Luxury · Honest Beauty · Confidence</p></div>
+          <div class="mini card"><h5>Confidence</h5><p class="muted">Products designed to help you feel polished, naturally.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials & Contact -->
+    <!-- Testimonials -->
     <section id="about" class="section">
       <div class="container-grid">
         <main class="content">
           <h2 class="section-title">What People Say</h2>
           <p class="muted">Real reviews from happy customers.</p>
-
-          <div class="testimonials">
-            <blockquote class="tcard">“My frizz vanished — feels like silk.” <cite>— Priya, Bangalore</cite></blockquote>
-            <blockquote class="tcard">“A luxurious finish; lightweight and lovely.” <cite>— Anya, Mumbai</cite></blockquote>
-            <blockquote class="tcard">“Love the glow — no residue, just shine.” <cite>— Sanya, Delhi</cite></blockquote>
-          </div>
+          <blockquote class="tcard">“My frizz vanished — feels like silk.” <cite>— Priya, Bangalore</cite></blockquote>
+          <blockquote class="tcard">“A luxurious finish; lightweight and lovely.” <cite>— Anya, Mumbai</cite></blockquote>
+          <blockquote class="tcard">“Love the glow — no residue, just shine.” <cite>— Sanya, Delhi</cite></blockquote>
         </main>
 
         <aside class="aside">
           <div class="card contact-card">
-            <h4><a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none;">Order via Instagram</a></h4>
-            <p class="muted">Click "Message on Instagram" — send us a DM with product & quantity; we'll reply with price & delivery.</p>
-            <button class="btn btn-primary" data-action="instagram"><a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none;">Message on Instagram</a></button>
-            <p class="muted small">Prefer email? <a href="mailto:sarahmushtaq130@gmail.com" id="emailFallback" style="color:goldenrod;text-decoration: none;">Send Mail</a></p>
+            <h4><a href="https://www.instagram.com/byauvra._" target="_blank" style="text-decoration:none;">Order via Instagram</a></h4>
+            <p class="muted">DM us with product & quantity — we’ll reply with price & delivery.</p>
+            <button class="btn btn-primary"><a href="https://www.instagram.com/byauvra._" target="_blank" style="text-decoration:none;">Message on Instagram</a></button>
+            <p class="muted small">Prefer email? <a href="mailto:sarahmushtaq130@gmail.com" style="color:goldenrod;text-decoration:none;">Send Mail</a></p>
           </div>
         </aside>
       </div>
@@ -205,17 +171,14 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="foot-left">
-        <img src="logo.jpg" alt="Auvra logo" class="logo" id="logoImg">
-        <div>
-          <strong>AUVRA</strong>
-          <div class="muted">Natural luxury haircare</div>
-        </div>
-      </div> 
+        <img src="logo.jpg" alt="Auvra logo" class="logo">
+        <div><strong>AUVRA</strong><div class="muted">Natural luxury haircare</div></div>
+      </div>
 
       <div class="foot-links">
         <a href="#product">Product</a>
         <a href="#benefits">Values</a>
-        <a href="#" data-action="instagram"><a href="https://www.instagram.com/byauvra._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></a>
+        <a href="https://www.instagram.com/byauvra._" target="_blank">Instagram</a>
       </div>
     </footer>
   </div>

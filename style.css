@@ -14,7 +14,6 @@
   --transition: all 0.4s ease;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,7 +64,6 @@ body {
   color: var(--muted);
 }
 
-/* Header */
 /* Header */
 .site-header {
   background: var(--white);
@@ -124,7 +122,6 @@ body {
   font-size: 0.75rem;
   color: var(--muted);
 }
-
 
 /* Navigation */
 .nav {
@@ -187,7 +184,7 @@ body {
   background: transparent;
 }
 
-.btn a{
+.btn a {
   color: #f0f0f0;
 }
 
@@ -400,8 +397,6 @@ cite {
   transform: translateY(0);
 }
 
-/* Responsive */
-
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
   .hero-inner {
@@ -425,9 +420,11 @@ cite {
     top: 70px;
     right: 1rem;
     background: var(--white);
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border-radius: var(--radius);
     box-shadow: 0 4px 20px var(--shadow);
+    width: 80%;
+    max-width: 300px;
   }
 
   .nav.show {
@@ -442,6 +439,10 @@ cite {
 
   .hamburger {
     display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--gold);
   }
 
   .container-grid {
@@ -453,11 +454,15 @@ cite {
     text-align: center;
     gap: 1rem;
   }
+
+  .foot-links a {
+    margin: 0 0.75rem;
+  }
 }
 
 @media (max-width: 600px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .section {
@@ -466,5 +471,18 @@ cite {
 
   .product-card {
     width: 100%;
+  }
+
+  .hero-lead {
+    font-size: 0.95rem;
+  }
+
+  .btn-xl {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
   }
 }
