@@ -96,3 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
+
+// Mobile navigation toggle
+document.getElementById('menuToggle').addEventListener('click', () => {
+  document.getElementById('mobileNav').classList.toggle('show');
+});
